@@ -1,0 +1,18 @@
+@import "../variable/_var.scss";
+.inbox{
+    &__link{
+        padding: .8rem 0;
+        display: block;
+        border-bottom: 2px solid $color-gray-light;
+        color: $color-secondary;
+        font-size: $font-size;
+        font-weight: bolder;
+        span{
+            margin-right: .4rem;
+        }
+    }
+    &__link.active-link{
+        color: $color-purple;
+        border-bottom: 2px solid $color-purple;
+    }
+}

@@ -1,0 +1,43 @@
+@import "../variable/_var.scss";
+
+.sidebar{
+    width: 15rem;
+    border-left: 1px solid $border-color;
+    height: calc(100vh - 4.75rem);
+    position: fixed;
+    padding: 1rem 0;
+    z-index: 999;
+    background-color: $color-white;
+    transition: right 0.3s linear;
+    @media (max-width: 991.98px) { 
+        right: -16rem;
+    }
+    &__list{
+        padding: 0;
+        list-style: none;
+        margin: 2rem 0 0 0;
+        &_link{
+            // border-radius: 15rem 0 0 15rem;
+            padding: 0.7em 1rem;
+            display: block;
+            transition: all .2s linear;
+            svg{
+                font-size: $font-size;
+                color: $color-text;
+            }
+            span{
+                color: $color-title;
+                font-weight: 200;
+            }
+        }
+    }
+}
+.active-link{
+    background-color: rgb(238, 242, 255);
+    *{
+        color: $color-purple !important;
+    }
+}
+.show-menu{
+    right: 0 !important;
+}

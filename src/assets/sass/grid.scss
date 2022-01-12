@@ -1,0 +1,40 @@
+@import "./variable/_var.scss";
+
+.text-decoration-dots {
+    border-bottom: 2px dashed #DC3545;
+}
+
+.text-blue {
+    color: red !important;
+}
+
+.btn-orange {
+    color: rgba($color: #000000, $alpha: 0.8) !important;
+    box-shadow: inset 0 -3px 0 0 #ffb833;
+    font-weight: bolder !important;
+    background-color: #ffcd70 !important;
+}
+
+.font-weight-bolder {
+    font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+.bg-light-gray{
+    background-color: #F5F5F5;
+}
+
+.btn-purple{
+    color: rgba($color: #fff, $alpha: 0.8) !important;
+    box-shadow: inset 0 -4px 0 0 #4d50ec;
+    font-weight: bolder !important;
+    background-color: $color-purple !important;
+}

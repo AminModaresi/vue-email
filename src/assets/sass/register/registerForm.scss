@@ -1,0 +1,57 @@
+@import "../variable/_var.scss";
+.register__form{
+        margin-top: 1.5rem;
+        position: relative;
+    &_content{
+        position: relative;
+        margin-bottom: 2rem;
+        label{
+            color: $color-gray;
+        }
+        input{
+            width: 100%;
+            border: 1px solid #eaeaea;
+            padding: 0.8rem 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            margin-top: .8rem;
+            z-index: 5;
+            background-color: $color-white;
+        }
+        p:first-of-type{
+            position: absolute;
+            bottom: 15px;
+            transition: all .3s linear;
+            z-index: -1;
+            font-size: $font-size;
+            color: $color-danger;
+        }
+        p:last-of-type{
+            position: absolute;
+            bottom: 15px;
+            transition: all .3s linear;
+            z-index: -1;
+            font-size: $font-size;
+            color: $color-danger;
+        }
+    }
+}
+.not-valid {
+    input{
+        border-color: $color-danger;
+    }
+    p:first-of-type{
+        bottom: -40px;
+    }
+
+}
+.not-same{
+    input{
+        border-color: $color-danger;
+    }
+    p:last-of-type{
+        bottom: -40px;
+        right: 140px;
+        font-size: $font-size;
+    }
+}

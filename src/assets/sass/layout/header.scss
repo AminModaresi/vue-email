@@ -1,0 +1,82 @@
+@import "../variable/_var.scss";
+
+.header {
+    padding: 1rem 15rem 1rem 1rem;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
+    background-color: $color-white;
+    align-items: center;
+    z-index: 998;
+    height: 4.75rem;
+    @media (max-width: 991.98px) {
+        padding: 1rem 1rem;
+        justify-content: space-between;
+    }
+    
+    &-right{
+        display: flex;
+        align-items: center;
+    }
+    &__profile {
+        width: 40px;
+        height: 40px;
+        border-radius: $circle;
+        &_img {
+            width: 100%;
+            border-radius: $circle;
+            height: 100%;
+        }
+    }
+    &__icon{
+        width: 40px;
+        height: 40px;
+        border-radius: $circle;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-left: .5rem;
+        font-size: $font-size;
+        transition: all .2s linear;
+        &:hover{
+            background-color: $color-gray-light;
+        }
+    }
+    &-center{
+        width: 100%;
+        margin-left: 2rem;
+    }
+    &__search{
+        border: none;
+        font-size: $font-size;
+        background-color: $color-gray-ultra-light;
+        padding: .8rem 1rem;
+        width: 100%;
+        border-radius: $border-radius-sm;
+        outline: none;
+        &::placeholder{
+            font-size: $font-size;
+        }
+    }
+}
+.dropdown-custom{
+    position: absolute;
+    top: 4rem;
+    width: 10rem;
+    left: 1rem;
+    border: 1px solid $border-color;
+    background-color: $color-white;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &_item{
+            padding: .5rem;
+            cursor: pointer;
+        }
+    }
+}

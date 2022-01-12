@@ -1,0 +1,18 @@
+@import "../fonts/iran-sans/_index.scss";
+body {
+  text-align: right;
+  direction: rtl;
+  font-family: "Iran Sans", sans-serif !important;
+}
+a{
+  text-decoration: none !important;
+}
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+.v-toast{
+  direction: ltr;
+}

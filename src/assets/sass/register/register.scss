@@ -1,0 +1,37 @@
+@import "../variable/_var.scss";
+.register{
+    margin: 3rem 0;
+    &__content{
+        padding:  1rem;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+    }
+    &__position{
+        border: 1px solid $border-color;
+        border-radius: $border-radius-lg;
+        position: relative;
+        &::after{
+            width: 50%;
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            background-color: $color-purple;
+            top: 0;
+            border-radius: $border-radius-lg;
+            z-index: -1;
+            transition: all .1s linear;
+            box-shadow: 0 8px 17px 2px rgba(132, 118, 192, 0.14),0 3px 14px 2px rgba(132, 118, 192, 0.12),0 5px 5px -3px rgba(132, 118, 192, 0.3);     }
+        &_btn{
+            padding: 0.8rem;
+            text-align: center;
+            cursor: pointer;
+            z-index: 998;
+        }
+    }
+}
+.change-to-login{
+    &::after{
+        left: 50%;
+    }
+}

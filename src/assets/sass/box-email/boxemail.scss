@@ -1,0 +1,54 @@
+@import "../variable/_var.scss";
+.main{
+    width: calc(100% - 15rem);
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 991.98px) { 
+      width: 100%;
+    }
+}
+.action{
+    padding: 1rem .5rem;
+    position: sticky;
+    top:4.75rem;
+    height: 3.75rem;
+    border-bottom: 1px solid $border-color;
+    background-color: $color-white;
+    display: flex;
+    align-items:center;
+    &__icon{
+      width: 32px;
+      height: 32px;
+      font-size: $font-size-ultra-small;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $circle;
+      margin-right: .5rem;
+      color: $color-gray;
+      transition: all .2s linear;
+      &:hover{
+        background-color: $color-gray-light;
+      }
+    }
+}
+.checkBox.active{
+    background-color: $color-purple;
+  .checkBox__mark {
+    width: 10px;
+    height: 10px;
+    background-color: $color-white;
+    border-radius: $circle;
+  }
+}
+.checkBox {
+  background-color: rgb(238, 242, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s linear;
+}
