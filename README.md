@@ -1,5 +1,5 @@
 # vue-email
-box email with register
-install 
-  npm install 
+box email with register <br/>
+install <br/>
+  npm install <br/>
   yarn install
